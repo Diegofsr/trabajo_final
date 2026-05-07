@@ -1,11 +1,338 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>GREEN BRUNCH CAFE | Café Vegano</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    
+
+    <nav id="navbar">
+        <div class="nav-container">
+            <a href="#inicio" class="nav-logo nav-logo-dark">
+                <img src="images/tipografiablanco.png" alt="GREEN BRUNCH CAFE">
+            </a>
+            <div class="nav-toggle" id="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#menu">Menú</a></li>
+                <li><a href="#nosotros">Nosotros</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section id="inicio" class="hero">
+        <div class="hero-bg" id="hero-bg">
+            <img src="images/bowl-vegano-recetas-vegetarianas-alubias-setas.jpg" alt="Bowl Vegano">
+        </div>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <p class="hero-subtitle fade-in" id="hero-subtitle">Bienvenido a</p>
+            <h1 class="hero-title" id="hero-title">
+                <span class="title-line">GREEN</span>
+                <span class="title-line">BRUNCH CAFE</span>
+            </h1>
+            <p class="hero-description fade-in" id="hero-desc">Sabor vegetal, experiencia inolvidable</p>
+            <a href="#menu" class="btn-primary fade-in" id="hero-btn">Descubre Nuestro Menú</a>
+        </div>
+        <div class="scroll-indicator" id="scroll-indicator">
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+            <p>Scroll</p>
+        </div>
+    </section>
+
+    <section id="menu" class="menu">
+        <div class="section-container">
+            <div class="section-header reveal">
+                <span class="section-tag">Lo Mejor</span>
+                <h2 class="section-title">Nuestro Menú</h2>
+                <div class="title-line-deco"></div>
+                <p class="section-desc">Platos preparados con ingredientes frescos, orgánicos y 100% vegetales</p>
+            </div>
+
+            <div class="slider-container reveal">
+                <div class="slider" id="slider">
+                    <div class="slide active" data-slide="0">
+                        <div class="slide-image">
+                            <img src="images/2119800.jpg" alt="Hamburguesa Vegana">
+                            <div class="slide-badge">Popular</div>
+                        </div>
+                        <div class="slide-content">
+                            <h3>Hamburguesa Vegana</h3>
+                            <p>Jugosa hamburguesa de legumbres con vegetales frescos, crema vegana y papas al horno. Una explosión de sabor en cada bocado.</p>
+                            <div class="slide-price">
+                                <span class="price">$12.99</span>
+                                <span class="old-price">$15.99</span>
+                            </div>
+                            <button class="btn-outline">Ordenar Ahora</button>
+                        </div>
+                    </div>
+                    <div class="slide" data-slide="1">
+                        <div class="slide-image">
+                            <img src="images/tacos-veganos-sin-carne-soja-recetas-veganas-faciles3.jpg" alt="Tacos Veganos">
+                            <div class="slide-badge">Nuevo</div>
+                        </div>
+                        <div class="slide-content">
+                            <h3>Tacos Veganos</h3>
+                            <p>Tortillas crujientes rellenas de proteína de soja especiada con queso vegano rallado y salsa especial de la casa.</p>
+                            <div class="slide-price">
+                                <span class="price">$10.99</span>
+                                <span class="old-price">$13.50</span>
+                            </div>
+                            <button class="btn-outline">Ordenar Ahora</button>
+                        </div>
+                    </div>
+                    <div class="slide" data-slide="2">
+                        <div class="slide-image">
+                            <img src="images/bowl-vegano-recetas-vegetarianas-alubias-setas.jpg" alt="Bowl Vegano">
+                            <div class="slide-badge">Favorito</div>
+                        </div>
+                        <div class="slide-content">
+                            <h3>Bowl Vegano</h3>
+                            <p>Bowl nutritivo con quinoa, alubias, tofu dorado, setas salteadas y papas asadas. Equilibrio perfecto de sabores y texturas.</p>
+                            <div class="slide-price">
+                                <span class="price">$14.50</span>
+                                <span class="old-price">$17.00</span>
+                            </div>
+                            <button class="btn-outline">Ordenar Ahora</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="slider-controls">
+                    <button class="slider-arrow" id="prev-btn">&#10094;</button>
+                    <div class="slider-dots" id="slider-dots">
+                        <span class="dot active" data-dot="0"></span>
+                        <span class="dot" data-dot="1"></span>
+                        <span class="dot" data-dot="2"></span>
+                    </div>
+                    <button class="slider-arrow" id="next-btn">&#10095;</button>
+                </div>
+            </div>
+
+            <div class="menu-categories reveal">
+                <div class="category-card" data-category="desayunos">
+                    <div class="category-icon">☀️</div>
+                    <h4>Desayunos</h4>
+                    <p>Desde 8:00 AM</p>
+                    <div class="category-overlay">
+                        <span>Ver más</span>
+                    </div>
+                </div>
+                <div class="category-card" data-category="almuerzos">
+                    <div class="category-icon"></div>
+                    <h4>Almuerzos</h4>
+                    <p>12:00 - 4:00 PM</p>
+                    <div class="category-overlay">
+                        <span>Ver más</span>
+                    </div>
+                </div>
+                <div class="category-card" data-category="bebidas">
+                    <div class="category-icon"></div>
+                    <h4>Bebidas</h4>
+                    <p>Café & Más</p>
+                    <div class="category-overlay">
+                        <span>Ver más</span>
+                    </div>
+                </div>
+                <div class="category-card" data-category="postres">
+                    <div class="category-icon">🍰</div>
+                    <h4>Postres</h4>
+                    <p>Dulces sin culpa</p>
+                    <div class="category-overlay">
+                        <span>Ver más</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="nosotros" class="about">
+        <div class="about-bg"></div>
+        <div class="section-container">
+            <div class="about-content">
+                <div class="about-text reveal">
+                    <span class="section-tag">Nuestra Historia</span>
+                    <h2 class="section-title">¿Por Qué Vegano?</h2>
+                    <div class="title-line-deco"></div>
+                    <p class="about-description">
+                        En <strong>GREEN BRUNCH CAFE</strong> creemos que la comida saludable puede ser deliciosa. Nacimos de la pasión por crear platos que cuidan tu cuerpo y el planeta, sin sacrificar sabor.
+                    </p>
+                    <p class="about-description">
+                        Cada ingrediente es seleccionado cuidadosamente de productores locales orgánicos. Nuestro chef transforma vegetales, legumbres y granos en experiencias gastronómicas únicas.
+                    </p>
+                    <a href="#contacto" class="btn-primary">Conoce Más</a>
+                </div>
+                <div class="about-image reveal">
+                    <img src="images/2119800.jpg" alt="Nuestro plato estrella">
+                    <div class="about-badge">
+                        <span class="badge-number">100%</span>
+                        <span class="badge-text">Orgánico</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="counters reveal">
+                <div class="counter-card">
+                    <div class="counter-icon">🌱</div>
+                    <div class="counter-number" data-target="5">0</div>
+                    <p>Años de experiencia</p>
+                </div>
+                <div class="counter-card">
+                    <div class="counter-icon">😊</div>
+                    <div class="counter-number" data-target="15000">0</div>
+                    <p>Clientes felices</p>
+                </div>
+                <div class="counter-card">
+                    <div class="counter-icon">🍽️</div>
+                    <div class="counter-number" data-target="50">0</div>
+                    <p>Platos únicos</p>
+                </div>
+                <div class="counter-card">
+                    <div class="counter-icon">⭐</div>
+                    <div class="counter-number" data-target="4.9" data-decimal="true">0</div>
+                    <p>Calificación promedio</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contacto" class="contact">
+        <div class="section-container">
+            <div class="section-header reveal">
+                <span class="section-tag">Visítanos</span>
+                <h2 class="section-title">Contacto</h2>
+                <div class="title-line-deco"></div>
+                <p class="section-desc">Reserva tu mesa o haz tu pedido para llevar</p>
+            </div>
+
+            <div class="contact-content">
+                <div class="contact-form-wrapper reveal">
+                    <form id="contact-form">
+                        <div class="form-group">
+                            <label for="name">Nombre</label>
+                            <input type="text" id="name" name="name" placeholder="Tu nombre" required>
+                            <span class="form-line"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" placeholder="tu@email.com" required>
+                            <span class="form-line"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Teléfono</label>
+                            <input type="tel" id="phone" name="phone" placeholder="+52 123 456 7890">
+                            <span class="form-line"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Mensaje</label>
+                            <textarea id="message" name="message" rows="4" placeholder="¿En qué podemos ayudarte?" required></textarea>
+                            <span class="form-line"></span>
+                        </div>
+                        <button type="submit" class="btn-primary full-width">
+                            <span>Enviar Mensaje</span>
+                            <div class="btn-ripple"></div>
+                        </button>
+                    </form>
+                </div>
+                <div class="contact-info reveal">
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                        </div>
+                        <div>
+                            <h4>Dirección</h4>
+                            <p>Av. Reforma 123, Col. Centro<br>Ciudad de México, CP 06000</p>
+                        </div>
+                    </div>
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6A19.79 19.79 0 012.12 4.18 2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.362 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.338 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+                        </div>
+                        <div>
+                            <h4>Teléfono</h4>
+                            <p>+52 55 1234 5678</p>
+                        </div>
+                    </div>
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+                        </div>
+                        <div>
+                            <h4>Horario</h4>
+                            <p>Lun - Vie: 8:00 AM - 9:00 PM<br>Sáb - Dom: 9:00 AM - 10:00 PM</p>
+                        </div>
+                    </div>
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><path d="M22 6l-10 7L2 6"/></svg>
+                        </div>
+                        <div>
+                            <h4>Email</h4>
+                            <p>hola@greenbrunchcafe.com</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="section-container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <img src="images/tipografia.png" alt="GREEN BRUNCH CAFE">
+                    <p>Sabor vegetal, experiencia inolvidable.</p>
+                </div>
+                <div class="footer-social">
+                    <a href="#" class="social-link" aria-label="Instagram">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1.5" fill="currentColor" stroke="none"/></svg>
+                    </a>
+                    <a href="#" class="social-link" aria-label="Facebook">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
+                    </a>
+                    <a href="#" class="social-link" aria-label="Twitter">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5 0-.28-.03-.56-.08-.83A7.72 7.72 0 0023 3z"/></svg>
+                    </a>
+                    <a href="#" class="social-link" aria-label="TikTok">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1v-3.5a6.37 6.37 0 00-.79-.05A6.34 6.34 0 003.15 15.2a6.34 6.34 0 0010.86 4.46v-7.15a8.16 8.16 0 004.77 1.52v-3.4a4.85 4.85 0 01-.81.06 4.83 4.83 0 01-3.77-4.25h-4.25v10.12a2.89 2.89 0 01-2.89 2.89 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89V10.5H7V15a2.89 2.89 0 012.89 2.89A2.89 2.89 0 017.15 20.78V8.11h4.25V2h3.45v.44a4.83 4.83 0 003.77 4.25h-1.23z"/></svg>
+                    </a>
+                </div>
+                <div class="footer-links">
+                    <a href="#inicio">Inicio</a>
+                    <a href="#menu">Menú</a>
+                    <a href="#nosotros">Nosotros</a>
+                    <a href="#contacto">Contacto</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 GREEN BRUNCH CAFE. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <div class="back-to-top" id="back-to-top">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 15l-6-6-6 6"/></svg>
+    </div>
+
+    <div class="form-success" id="form-success">
+        <div class="success-content">
+            <span class="success-icon">✓</span>
+            <h3>¡Mensaje Enviado!</h3>
+            <p>Te contactaremos pronto.</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
